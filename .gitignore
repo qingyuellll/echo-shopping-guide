@@ -1,0 +1,25 @@
+.idea/
+node_modules/
+dist/
+.env
+.env.local
+*.tsbuildinfo
+*.log
+
+# 导购本地配置（含个人口令与模型 Key，不入库）
+/guide.env.cmd
+
+# 构建产物
+/backend/guide.exe
+/backend/*.exe
+/backend/*.exe~
+*.exe~
+
+# 助手运行期落盘：提示词版本、咨询统计、自定义巡检用例、Agent 轨迹
+/backend/guide-prompt.json
+/backend/guide-stats.jsonl
+/backend/guide-cases.json
+/backend/agent-runs.jsonl
+/backend/agent-state.json
+/backend/agent-checkpoints.jsonl
+/backend/agent-bench.json

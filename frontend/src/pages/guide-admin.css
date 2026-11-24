@@ -1,0 +1,189 @@
+/* 管理端沿用导购的暖白/灰绿体系，只增加排版层，不引入新主色。 */
+.ga-page .eg-main{padding-bottom:8px}
+.ga-logo{border:0;background:transparent;display:flex;align-items:center;gap:18px;font-size:14px;line-height:1.35;letter-spacing:2px;color:var(--eg-ink);padding:0;text-align:left}
+.ga-logo small{font-size:8px;letter-spacing:1.8px}
+.ga-refresh{border:0;background:transparent;color:var(--eg-muted);padding:8px 0}
+.ga-hero{align-items:stretch;padding-bottom:44px}
+.ga-hero h1{font-size:clamp(38px,4.2vw,56px)}
+.ga-status{border:1px solid #dcded2;border-radius:8px;background:#fffefa;padding:22px 24px;display:grid;align-content:start;gap:14px}
+.ga-status-row{display:grid;gap:4px;padding-bottom:12px;border-bottom:1px solid #eeeee4}
+.ga-status-row:last-of-type{border-bottom:0;padding-bottom:0}
+.ga-status-row>span{font-size:10px;letter-spacing:1px;color:#8a9381}
+.ga-status-row>strong{font-size:13px;font-weight:500;color:#3d5042;line-height:1.5;overflow-wrap:anywhere}
+.ga-status-row small{font-size:9px;color:#959c8f;font-weight:400}
+.ga-status-note{font-size:10px;line-height:1.85;color:#8a9381;border-top:1px dashed #dfe4d4;padding-top:12px}
+
+.ga-metrics{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:0;border:1px solid var(--eg-line);border-radius:8px;background:#fffefa;margin-bottom:26px;overflow:hidden}
+.ga-metrics>div{padding:20px 22px;border-right:1px solid var(--eg-line);display:grid;gap:4px}
+.ga-metrics>div:last-child{border-right:0}
+.ga-metrics strong{font-size:30px;font-weight:500;line-height:1.1;color:#445a48}
+.ga-metrics span{font-size:11px;color:#6d7a6a}
+.ga-metrics small{font-size:9px;color:#98a08f}
+
+.ga-columns{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:22px;margin-bottom:22px}
+.ga-card{border:1px solid var(--eg-line);border-radius:8px;background:#fffefa;padding:22px 24px}
+.ga-card .eg-section-label{margin-top:0}
+.ga-card .eg-section-label>span:first-child{font-size:14px;color:var(--eg-ink)}
+.ga-note{font-size:11px;line-height:1.9;color:#7c8773;margin-bottom:14px}
+.ga-actions{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.ga-actions small{font-size:9px;color:#98a08f}
+.ga-left{text-align:left!important}
+.ga-empty{min-height:260px;margin-top:10px}
+
+.ga-gate{border:1px solid var(--eg-line);border-radius:8px;background:#fffefa;padding:34px 32px;max-width:620px;margin:6px auto 40px}
+.ga-gate h2{font-size:24px;font-weight:500;margin:12px 0 10px}
+.ga-gate p{font-size:12px;line-height:1.9;color:#7c8773}
+.ga-gate code{background:#eef2e7;border-radius:3px;padding:1px 5px;font-size:11px;color:#4f6a50}
+.ga-gate form{display:flex;gap:10px;margin-top:18px;flex-wrap:wrap}
+.ga-gate input{flex:1;min-width:200px;border:1px solid #d9e0d1;border-radius:4px;background:#fbfaf4;padding:10px 12px;font-size:12px;color:#465c4e;outline:none}
+.ga-gate input:focus-visible{outline:2px solid #65846f;outline-offset:2px}
+
+.ga-health{list-style:none;display:grid;gap:12px;margin:0 0 14px;padding:0}
+.ga-health li{display:grid;grid-template-columns:auto 1fr;gap:10px;align-items:start}
+.ga-health strong{font-size:12px;font-weight:500;color:#3f5343}
+.ga-health p{font-size:11px;line-height:1.8;color:#7c8773;margin-top:3px}
+.ga-health li.ga-health-warn .ga-chip{background:#f7f0e4;color:#826e4c}
+.ga-health li.ga-health-ok .ga-chip{background:#dce8d0;color:#547044}
+
+.ga-chip{font-size:9px;line-height:1.6;padding:2px 7px;border-radius:3px;background:#eaeedf;color:#7b896d;white-space:nowrap;align-self:start}
+.ga-chip-ok{background:#dce8d0;color:#547044}
+.ga-chip-bad{background:#f4dfd8;color:#9b5a44}
+.ga-chip-ai{background:#e7e9f2;color:#5a6180}
+
+.ga-eval-list{display:grid;gap:8px;margin-top:14px}
+.ga-eval-list details{border:1px solid #e2e7d8;border-radius:4px;background:#fbfaf4;padding:10px 12px}
+.ga-eval-list summary{display:grid;grid-template-columns:auto 1fr;gap:8px;align-items:center;cursor:pointer;list-style:none}
+.ga-eval-list summary::-webkit-details-marker{display:none}
+.ga-eval-list summary strong{font-size:12px;font-weight:500;color:#3f5343}
+.ga-eval-list summary small{grid-column:2;font-size:10px;color:#959c8f;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.ga-eval-list .ga-eval-bad{border-color:#ecdcce;background:#fdf8f2}
+.ga-eval-list ul{list-style:none;margin:10px 0 0;padding:0;display:grid;gap:5px}
+.ga-eval-list li{display:grid;grid-template-columns:auto auto 1fr;gap:6px;align-items:baseline;font-size:11px;line-height:1.7;color:#5d6b58}
+.ga-eval-list em{font-style:normal;color:#959c8f;font-size:10px;justify-self:end;text-align:right}
+.ga-check-ok{color:#547044}
+.ga-check-bad{color:#9b5a44}
+
+.ga-card textarea{width:100%;border:1px solid #d9e0d1;border-radius:4px;background:#fbfaf4;padding:12px 14px;font-size:11px;line-height:1.95;color:#42533f;resize:vertical;outline:none;min-height:180px}
+.ga-card textarea:focus-visible{outline:2px solid #65846f;outline-offset:2px}
+.ga-prompt-foot{display:flex;justify-content:space-between;align-items:center;gap:14px;margin-top:12px;flex-wrap:wrap}
+.ga-prompt-foot>small{font-size:9px;color:#98a08f}
+
+.ga-table-wrap{overflow-x:auto}
+.ga-table{width:100%;border-collapse:collapse;font-size:11px}
+.ga-table th,.ga-table td{text-align:left;padding:9px 10px;border-bottom:1px solid #eeeee4;vertical-align:top}
+.ga-table th{font-size:9px;letter-spacing:.6px;color:#8a9381;font-weight:500;border-bottom:1px solid var(--eg-line)}
+.ga-table td{color:#5d6b58}
+.ga-table .ga-question{max-width:420px;overflow-wrap:anywhere}
+.ga-empty-row{font-size:11px;line-height:1.9;color:#8a9381;background:#f7f8f1;border:1px dashed #dfe4d4;border-radius:4px;padding:14px}
+
+.ga-notice{margin-top:18px;font-size:11px;line-height:1.8;color:#547044;background:#eef4e6;border:1px solid #dfe8d2;border-radius:4px;padding:10px 12px}
+.ga-error{margin-top:14px;font-size:11px;line-height:1.8;color:#9b5a44;background:#fdf3ee;border:1px solid #ecd9cd;border-radius:4px;padding:10px 12px}
+.ga-footer note{display:none}
+
+@media(max-width:1050px){.ga-columns{grid-template-columns:1fr}.ga-metrics{grid-template-columns:repeat(2,minmax(0,1fr))}.ga-metrics>div:nth-child(2){border-right:0}.ga-metrics>div:nth-child(1),.ga-metrics>div:nth-child(2){border-bottom:1px solid var(--eg-line)}}
+@media(max-width:790px){.ga-hero{grid-template-columns:1fr}.ga-status{margin-top:18px}.ga-table .ga-question{max-width:220px}}
+@media(max-width:480px){.ga-metrics{grid-template-columns:1fr}.ga-metrics>div{border-right:0;border-bottom:1px solid var(--eg-line)}.ga-card{padding:18px}.ga-gate{padding:24px 20px}}
+
+.ga-footer>div{display:flex;gap:18px;margin-left:auto}.ga-footer>div button{margin-left:0}
+
+/* 城市与票档分析：沿用同一套表格、芯片与灰绿进度条。 */
+.ga-muted{color:#a0a79a;font-size:10px}
+.ga-badges{display:flex;flex-wrap:wrap;gap:4px}
+.ga-table small{display:block;font-size:9px;color:#98a08f;margin-top:2px}
+.ga-category-strip{display:flex;flex-wrap:wrap;align-items:center;gap:6px;margin-top:14px;padding-top:12px;border-top:1px dashed #dfe4d4}
+.ga-strip-label{font-size:9px;letter-spacing:.8px;color:#8a9381;margin-right:4px}
+.ga-chips{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:16px}
+.ga-bands{display:grid;gap:8px;margin-bottom:18px}
+.ga-band{display:grid;grid-template-columns:84px minmax(0,1fr) 96px;align-items:center;gap:10px;font-size:10px;color:#6d7a6a}
+.ga-band-label{color:#7c8773}
+.ga-bar{height:6px;background:#eef2e7;border-radius:3px;overflow:hidden}
+.ga-bar>i{display:block;height:100%;background:#b3c4ad;border-radius:3px}
+.ga-band-value{text-align:right;font-size:9px;color:#98a08f}
+.ga-filters{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin-bottom:14px}
+.ga-filters input[type="text"],.ga-filters input:not([type]){flex:1;min-width:150px;border:1px solid #d9e0d1;border-radius:4px;background:#fbfaf4;padding:7px 10px;font-size:11px;color:#465c4e;outline:none}
+.ga-filters input:focus-visible,.ga-filters select:focus-visible{outline:2px solid #65846f;outline-offset:2px}
+.ga-filters select{border:1px solid #d9e0d1;border-radius:4px;background:#fbfaf4;padding:6px 8px;font-size:10px;color:#5d6b58;max-width:170px}
+.ga-check{display:inline-flex;align-items:center;gap:5px;font-size:10px;color:#6d7a6a}
+.ga-filter-count{margin-left:auto;font-size:9px;color:#98a08f}
+.ga-more{margin-top:12px}
+.ga-notes{list-style:none;margin:14px 0 0;padding:12px 14px;background:#f7f8f1;border:1px dashed #dfe4d4;border-radius:4px;display:grid;gap:5px}
+.ga-notes li{font-size:10px;line-height:1.8;color:#7c8773}
+.ga-city-table td{white-space:nowrap}
+.ga-city-table td:first-child{white-space:normal}
+@media(max-width:790px){.ga-band{grid-template-columns:74px minmax(0,1fr) 78px}.ga-filter-count{margin-left:0}}
+
+/* 对话试验台：问题用米色气泡，回答用浅底卡片，与导购助手保持同一套观感。 */
+.ga-chat-starters{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:14px}
+.ga-chat-starter{font-size:10px;padding:6px 10px;border:1px solid #e5e8de;border-radius:4px;background:#f8f9f3;color:#707c67;cursor:pointer;line-height:1.5}
+.ga-chat-starter:hover:not(:disabled){background:#eef2e7;border-color:#cfd9c3}
+.ga-chat-log{display:grid;gap:14px;margin-bottom:14px}
+.ga-chat-turn{display:grid;gap:8px}
+.ga-chat-q{display:flex;gap:8px;align-items:flex-start;background:#f3eee4;border-radius:6px;padding:9px 12px;font-size:11px;line-height:1.8;color:#4d5c4a;justify-self:end;max-width:88%}
+.ga-chat-q>span{font-family:Georgia,serif;font-size:9px;color:#9a8f77;flex:none;padding-top:2px}
+.ga-chat-a{border:1px solid #e2e7d8;border-radius:6px;background:#fbfaf4;padding:14px 16px;display:grid;gap:10px}
+.ga-chat-answer{font-size:11px;line-height:1.95;color:#4a5b46;white-space:pre-wrap;overflow-wrap:anywhere}
+.ga-chat-meta,.ga-chat-plan{display:flex;flex-wrap:wrap;gap:6px;align-items:center}
+.ga-chat-plan{padding-top:9px;border-top:1px dashed #e4e8da}
+.ga-chat-table td{font-size:11px;vertical-align:top}
+.ga-chat-flags{list-style:none;margin:0;padding:10px 12px;background:#f7f8f1;border:1px dashed #dfe4d4;border-radius:4px;display:grid;gap:4px}
+.ga-chat-flags li{font-size:10px;line-height:1.7;color:#7c8773}
+.ga-chat-loading{font-size:10px;color:#98a08f;padding:2px 0}
+.ga-chat-form{display:grid;gap:10px;border-top:1px dashed #dfe4d4;padding-top:14px}
+.ga-chat-form textarea{width:100%;border:1px solid #d9e0d1;border-radius:4px;background:#fbfaf4;padding:10px 12px;font-size:11px;line-height:1.85;color:#42533f;resize:vertical;min-height:58px;outline:none}
+.ga-chat-form textarea:focus-visible{outline:2px solid #65846f;outline-offset:2px}
+.ga-chat-controls{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.ga-chat-controls .eg-primary{margin-left:auto}
+@media(max-width:480px){.ga-chat-q{max-width:100%}.ga-chat-controls .eg-primary{margin-left:0}}
+
+/* 提示词二次确认、保存后巡检与修改记录：沿用同一套卡片、芯片与描边按钮。 */
+.ga-confirm{margin-top:14px;border:1px solid #e5d9c3;background:#f7f0e4;border-radius:6px;padding:14px 16px;display:grid;gap:9px}
+.ga-confirm strong{font-size:12px;color:#5f5142}
+.ga-confirm p{margin:0;font-size:10px;line-height:1.8;color:#826e4c}
+.ga-confirm input{border:1px solid #e0d3b8;border-radius:4px;background:#fbfaf4;padding:8px 10px;font-size:11px;color:#4d5c4a;outline:none}
+.ga-confirm input:focus-visible{outline:2px solid #65846f;outline-offset:2px}
+.ga-confirm .ga-actions{margin-top:2px}
+.ga-last-eval{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin-top:12px}
+.ga-failed-names{font-size:10px;color:#a05a45}
+.ga-history{margin-top:16px;border-top:1px dashed #dfe4d4;padding-top:12px}
+.ga-history ul{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+.ga-history li{display:flex;flex-wrap:wrap;align-items:baseline;gap:8px;font-size:11px;color:#5d6b58}
+.ga-history li strong{font-size:10px;color:#465c4e}
+.ga-history li small{font-size:9px;color:#98a08f}
+.ga-history li p{flex-basis:100%;margin:0;font-size:10px;line-height:1.7;color:#7c8773;overflow-wrap:anywhere}
+
+/* 自定义巡检用例、数据草稿、健康徽章与长问题展开：沿用同一套卡片与芯片。 */
+.ga-warn-badge{display:inline-flex;align-items:center;justify-content:center;min-width:16px;height:16px;margin-left:5px;padding:0 4px;border-radius:8px;background:#a05a45;color:#f8f9f3;font-size:9px;font-weight:600}
+.ga-cases{margin-top:14px;border-top:1px dashed #dfe4d4;padding-top:12px;display:grid;gap:8px}
+.ga-cases-head{display:flex;flex-wrap:wrap;gap:8px;align-items:baseline}
+.ga-cases-head strong{font-size:11px;color:#465c4e}
+.ga-cases-head small{font-size:9px;color:#98a08f}
+.ga-cases ul{list-style:none;margin:0;padding:0;display:grid;gap:6px}
+.ga-cases li{display:flex;flex-wrap:wrap;align-items:center;gap:8px;font-size:11px;color:#5d6b58}
+.ga-case-q{flex:1;min-width:180px}
+.ga-cases-form{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr) auto;gap:8px}
+.ga-cases-form input{border:1px solid #d9e0d1;border-radius:4px;background:#fbfaf4;padding:7px 10px;font-size:11px;color:#465c4e;outline:none}
+.ga-cases-form input:focus-visible{outline:2px solid #65846f;outline-offset:2px}
+.ga-cases>small{font-size:9px;color:#98a08f}
+.ga-draft-result{margin-top:14px;border:1px dashed #dfe4d4;border-radius:6px;background:#fbfaf4;padding:14px 16px;display:grid;gap:10px}
+.ga-draft-result strong{font-size:13px;color:#465c4e}
+.ga-draft-result p{margin:0;font-size:11px;line-height:1.8;color:#6d7a6a}
+.ga-q-clamp{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.ga-q-toggle{margin-left:8px;font-size:9px;padding:3px 8px}
+@media(max-width:790px){.ga-cases-form{grid-template-columns:1fr}}
+
+/* Agent 观测：轨迹展开、审计与评估按钮 */
+.ga-agent-row{cursor:pointer}
+.ga-agent-row:hover td{background:#f8f9f3}
+.ga-agent-detail td{background:#fbfcf7;padding:10px 12px}
+.ga-agent-q{max-width:220px}
+.ga-agent-tools{max-width:200px;font-family:var(--font-mono,monospace);font-size:11px;color:#6b7663}
+.ga-agent-steps{list-style:none;margin:0 0 8px;padding:0;display:grid;gap:5px}
+.ga-agent-steps li{display:flex;align-items:baseline;gap:8px;font-size:12px;line-height:1.6;flex-wrap:wrap}
+.ga-agent-steps li strong{font-weight:500;color:#46523f}
+.ga-agent-steps li small{color:#98a08c}
+.ga-agent-step-fail strong{color:#9b6252}
+.ga-agent-answer{margin:6px 0 0;font-size:12px;color:#5c6c54;line-height:1.7}
+.ga-agent-buttons{display:flex;gap:10px;margin:8px 0 12px;flex-wrap:wrap}
+.ga-agent-failures{margin:8px 0 0;padding-left:18px;font-size:12px;color:#7a6a3f;line-height:1.8}
+.ga-hint{font-size:11px;color:#96a08c;margin:4px 0 10px}
+.ga-card h3{margin:16px 0 4px;font-size:13px;font-weight:500;color:#46523f}
